@@ -13,7 +13,7 @@
 
     h1 {
       color: #2e7d32;
-      text-align: left;
+      margin-bottom: 10px;
     }
 
     .notice {
@@ -21,47 +21,46 @@
       padding: 12px;
       border-radius: 8px;
       font-weight: bold;
-      width: fit-content;
-      margin-left: auto;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      text-align: left;
     }
 
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
 
     h2 {
       color: #333;
       border-left: 5px solid #2e7d32;
       padding-left: 10px;
+      margin-bottom: 10px;
     }
 
     .serve {
-      color: #555;
-      margin-top: -5px;
+      color: #666;
       margin-bottom: 15px;
+      font-size: 14px;
     }
 
     .item {
       background: white;
       border-radius: 12px;
       padding: 15px;
-      margin: 12px 0;
+      margin-bottom: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
     .item-name {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: bold;
-      margin-bottom: 10px;
       color: #222;
+      margin-bottom: 12px;
     }
 
     .item-bottom {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-top: 10px;
+      gap: 12px;
     }
 
     .price {
@@ -70,16 +69,17 @@
       font-size: 16px;
     }
 
-    a.order {
-      padding: 8px 16px;
+    .order {
       background: #2e7d32;
       color: white;
       text-decoration: none;
+      padding: 8px 16px;
       border-radius: 6px;
+      font-size: 14px;
       font-weight: bold;
     }
 
-    a.order:hover {
+    .order:hover {
       background: #256628;
     }
   </style>
@@ -90,16 +90,17 @@
 <h1>🍽️ Grin Park Menu</h1>
 
 <div class="notice">
-  ⏱️ Average preparation time: 20 minutes
+⏱️ Average preparation time: 20 minutes
 </div>
 
 <!-- GRILL MENU -->
 <div class="section">
+
   <h2>🍗 Grill Menu</h2>
 
-  <p class="serve">
+  <div class="serve">
     Served with Rice, Chips, Nsima or Mashed Potatoes.
-  </p>
+  </div>
 
   <div class="item">
     <div class="item-name">4x Drumsticks</div>
@@ -156,15 +157,17 @@
       <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20Rib%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
   </div>
+
 </div>
 
 <!-- LOCAL DISHES -->
 <div class="section">
+
   <h2>🍲 Local Dishes</h2>
 
-  <p class="serve">
+  <div class="serve">
     Served with Rice, Chips, Nsima or Mashed Potatoes.
-  </p>
+  </div>
 
   <div class="item">
     <div class="item-name">Usipa</div>
@@ -213,10 +216,36 @@
       <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Chambo%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
   </div>
+
+  <div class="item">
+    <div class="item-name">Zinziri</div>
+    <div class="item-bottom">
+      <span class="price">MWK 15,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zinziri%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">Zipiyo</div>
+    <div class="item-bottom">
+      <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zipiyo%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">Goat Meat</div>
+    <div class="item-bottom">
+      <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Meat%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
 </div>
 
 <!-- SNACKS -->
 <div class="section">
+
   <h2>🍟 Snacks & Sides</h2>
 
   <div class="item">
@@ -236,12 +265,85 @@
   </div>
 
   <div class="item">
+    <div class="item-name">Boiled/Fried Egg</div>
+    <div class="item-bottom">
+      <span class="price">MWK 1,500</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Egg%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">4x Meatball</div>
+    <div class="item-bottom">
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Meatball%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
     <div class="item-name">Beef + Goat Kebab</div>
     <div class="item-bottom">
       <span class="price">MWK 5,500</span>
       <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20%2B%20Goat%20Kebab%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
   </div>
+
+  <div class="item">
+    <div class="item-name">Extra Chips</div>
+    <div class="item-bottom">
+      <span class="price">MWK 5,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Chips%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">Extra Rice</div>
+    <div class="item-bottom">
+      <span class="price">MWK 5,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Rice%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- SOUPS -->
+<div class="section">
+
+  <h2>🍲 Soups & Specials</h2>
+
+  <div class="item">
+    <div class="item-name">Goat Soup</div>
+    <div class="item-bottom">
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">Shin Soup</div>
+    <div class="item-bottom">
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Shin%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">Mang’ina Soup</div>
+    <div class="item-bottom">
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-name">Skop</div>
+    <div class="item-bottom">
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Skop%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>
