@@ -12,8 +12,8 @@
     }
 
     h1 {
-      text-align: left;
       color: #2e7d32;
+      text-align: left;
     }
 
     .notice {
@@ -37,7 +37,6 @@
     }
 
     .serve {
-      text-align: left;
       color: #555;
       margin-top: -5px;
       margin-bottom: 15px;
@@ -46,32 +45,42 @@
     .item {
       background: white;
       border-radius: 12px;
-      padding: 12px;
+      padding: 15px;
       margin: 12px 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
-    .item-header {
+    .item-row {
       display: flex;
       justify-content: space-between;
-      align-items: left;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .item-name {
       font-weight: bold;
-      margin-bottom: 10px;
+      flex: 1;
+      min-width: 150px;
     }
 
     .price {
       color: #2e7d32;
+      font-weight: bold;
       white-space: nowrap;
     }
 
     a.order {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 10px 15px;
+      padding: 8px 14px;
       background: #2e7d32;
       color: white;
       text-decoration: none;
       border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    a.order:hover {
+      background: #256628;
     }
   </style>
 </head>
@@ -81,7 +90,7 @@
 <h1>🍽️ Grin Park Menu</h1>
 
 <div class="notice">
-⏱️ Average preparation time: 20 minutes
+  ⏱️ Average preparation time: 20 minutes
 </div>
 
 <!-- GRILL MENU -->
@@ -93,59 +102,59 @@
   </p>
 
   <div class="item">
-    <div class="item-header">
-      <span>4x Drumsticks</span>
+    <div class="item-row">
+      <span class="item-name">4x Drumsticks</span>
       <span class="price">MWK 25,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Drumsticks%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Drumsticks%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>4x Wings</span>
+    <div class="item-row">
+      <span class="item-name">4x Wings</span>
       <span class="price">MWK 20,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Wings%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Wings%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Quarter Chicken</span>
+    <div class="item-row">
+      <span class="item-name">Quarter Chicken</span>
       <span class="price">MWK 15,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Quarter%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Quarter%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Half Chicken</span>
+    <div class="item-row">
+      <span class="item-name">Half Chicken</span>
       <span class="price">MWK 29,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Half%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Half%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Full Chicken</span>
+    <div class="item-row">
+      <span class="item-name">Full Chicken</span>
       <span class="price">MWK 58,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Full%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Full%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>T-Bone</span>
+    <div class="item-row">
+      <span class="item-name">T-Bone</span>
       <span class="price">MWK 18,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20T-Bone%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20T-Bone%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Beef Rib</span>
+    <div class="item-row">
+      <span class="item-name">Beef Rib</span>
       <span class="price">MWK 18,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20Rib%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20Rib%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 </div>
 
@@ -158,185 +167,175 @@
   </p>
 
   <div class="item">
-    <div class="item-header">
-      <span>Usipa</span>
+    <div class="item-row">
+      <span class="item-name">Usipa</span>
       <span class="price">MWK 20,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Usipa%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Usipa%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Local Chicken</span>
+    <div class="item-row">
+      <span class="item-name">Local Chicken</span>
       <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Local%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Local%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Bombe</span>
+    <div class="item-row">
+      <span class="item-name">Bombe</span>
       <span class="price">MWK 18,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Bombe%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Bombe%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Offals</span>
+    <div class="item-row">
+      <span class="item-name">Offals</span>
       <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Offals%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Offals%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Mang’ina</span>
+    <div class="item-row">
+      <span class="item-name">Mang’ina</span>
       <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Chambo</span>
+    <div class="item-row">
+      <span class="item-name">Chambo</span>
       <span class="price">MWK 30,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Chambo%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Chambo%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Zinziri</span>
+    <div class="item-row">
+      <span class="item-name">Zinziri</span>
       <span class="price">MWK 15,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zinziri%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zinziri%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Zipiyo</span>
+    <div class="item-row">
+      <span class="item-name">Zipiyo</span>
       <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zipiyo%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zipiyo%0AQty:%0ALocation:%0ADelivery:">Order</a>
   </div>
 
   <div class="item">
-    <div class="item-header">
-      <span>Goat Meat</span>
+    <div class="item-row">
+      <span class="item-name">Goat Meat</span>
       <span class="price">MWK 13,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Meat%0AQty:%0ALocation:%0ADelivery:">Order</a>
     </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Meat%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+</div>
+
+<!-- SNACKS -->
+<div class="section">
+  <h2>🍟 Snacks & Sides</h2>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">4x Chicken Strips</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Chicken%20Strips%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">5x Samosa</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%205x%20Samosa%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Boiled/Fried Egg</span>
+      <span class="price">MWK 1,500</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Egg%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">4x Meatball</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Meatball%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Beef + Goat Kebab</span>
+      <span class="price">MWK 5,500</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20%2B%20Goat%20Kebab%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Extra Chips</span>
+      <span class="price">MWK 5,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Chips%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Extra Rice</span>
+      <span class="price">MWK 5,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Rice%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+</div>
+
+<!-- SOUPS -->
+<div class="section">
+  <h2>🍲 Soups & Specials</h2>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Goat Soup</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Shin Soup</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Shin%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Mang’ina Soup</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-row">
+      <span class="item-name">Skop</span>
+      <span class="price">MWK 10,000</span>
+      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Skop%0AQty:%0ALocation:%0ADelivery:">Order</a>
+    </div>
   </div>
 </div>
 
 </body>
 </html>
-<!-- SNACKS & SIDES -->
-<div class="section">
-  <h2>🍟 Snacks & Sides</h2>
-
-  <div class="item">
-    <div class="item-header">
-      <span>4x Chicken Strips</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Chicken%20Strips%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>5x Samosa</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%205x%20Samosa%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Boiled/Fried Egg</span>
-      <span class="price">MWK 1,500</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Egg%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-<div class="item">
-  
-  <div style="display:flex; justify-content:space-between; align-items:center;">
-
-    <div>
-      <strong>Beef + Goat Kebab</strong><br>
-      <span class="price">MWK 5,500</span>
-    </div>
-
-    <a class="order"
-    href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20%2B%20Goat%20Kebab%0AQty:%0ALocation:%0ADelivery:">
-    Order
-    </a>
-
-  </div>
-
-</div>
-  <div class="item">
-    <div class="item-header">
-      <span>4x Meatball</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Meatball%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Extra Chips</span>
-      <span class="price">MWK 5,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Chips%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Extra Rice</span>
-      <span class="price">MWK 5,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Rice%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-</div>
-
-<!-- SOUPS & SPECIALS -->
-<div class="section">
-  <h2>🍲 Soups & Specials</h2>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Goat Soup</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Shin Soup</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Shin%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Mang’ina Soup</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-  <div class="item">
-    <div class="item-header">
-      <span>Skop</span>
-      <span class="price">MWK 10,000</span>
-    </div>
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Skop%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-
-    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20%2B%20Goat%20Kebab%0AQty:%0ALocation:%0ADelivery:">Order</a>
-  </div>
-</div>
