@@ -2,19 +2,8 @@
 <html>
 <head>
   <title>Grin Park Menu</title>
-  
-  <style>
-    .item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  font-weight: bold;
-}
 
-.price {
-  white-space: nowrap;
-  color: #2e7d32;
-}
+  <style>
     body {
       font-family: Arial, sans-serif;
       background: #f4f4f4;
@@ -23,17 +12,18 @@
     }
 
     h1 {
-      text-align: left;
+      text-align: center;
       color: #2e7d32;
     }
 
     .notice {
       background: #fff3cd;
       padding: 12px;
-      text-align: left;
       border-radius: 8px;
-      margin: 10px 0 20px;
       font-weight: bold;
+      width: fit-content;
+      margin-left: auto;
+      margin-bottom: 20px;
     }
 
     .section {
@@ -46,6 +36,13 @@
       padding-left: 10px;
     }
 
+    .serve {
+      text-align: center;
+      color: #555;
+      margin-top: -5px;
+      margin-bottom: 15px;
+    }
+
     .item {
       background: white;
       border-radius: 12px;
@@ -54,17 +51,17 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
-    .item img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
       margin-bottom: 10px;
     }
 
     .price {
-      font-weight: bold;
-      margin: 5px 0;
+      color: #2e7d32;
+      white-space: nowrap;
     }
 
     a.order {
@@ -86,60 +83,257 @@
 <div class="notice">
 ⏱️ Average preparation time: 20 minutes
 </div>
+
 <!-- GRILL MENU -->
 <div class="section">
   <h2>🍗 Grill Menu</h2>
-  <p style="text-align:left; margin-top:-10px; color:#555;">
-Served with Rice, Chips, Nsima or Mashed Potatoes.
-</p>
 
-  <div class="item"><div class="price">4x Drumsticks – MWK 25,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">4x Wings – MWK 20,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Quarter Chicken – MWK 15,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Half Chicken – MWK 29,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Full Chicken – MWK 58,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">T-Bone – MWK 18,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Beef Rib – MWK 18,000</div><a class="order" href="#">Order</a></div>
+  <p class="serve">
+    Served with Rice, Chips, Nsima or Mashed Potatoes.
+  </p>
+
+  <div class="item">
+    <div class="item-header">
+      <span>4x Drumsticks</span>
+      <span class="price">MWK 25,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Drumsticks%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>4x Wings</span>
+      <span class="price">MWK 20,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Wings%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Quarter Chicken</span>
+      <span class="price">MWK 15,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Quarter%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Half Chicken</span>
+      <span class="price">MWK 29,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Half%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Full Chicken</span>
+      <span class="price">MWK 58,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Full%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>T-Bone</span>
+      <span class="price">MWK 18,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20T-Bone%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Beef Rib</span>
+      <span class="price">MWK 18,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20Rib%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
 </div>
 
 <!-- LOCAL DISHES -->
 <div class="section">
   <h2>🍲 Local Dishes</h2>
 
-  <div class="item"><div class="price">Usipa – MWK 20,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Local Chicken – MWK 13,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Bombe – MWK 18,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Offals – MWK 13,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Mang’ina – MWK 13,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Chambo – MWK 30,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Zinziri – MWK 15,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Zipiyo – MWK 13,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Goat Meat – MWK 13,000</div><a class="order" href="#">Order</a></div>
-</div>
+  <p class="serve">
+    Served with Rice, Chips, Nsima or Mashed Potatoes.
+  </p>
 
-<!-- SNACKS -->
-<div class="section">
-  <h2>🍟 Snacks & Sides</h2>
+  <div class="item">
+    <div class="item-header">
+      <span>Usipa</span>
+      <span class="price">MWK 20,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Usipa%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
 
-  <div class="item"><div class="price">4x Chicken Strips – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">5x Samosa – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Boiled/Fried Egg – MWK 1,500</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">4x Meatball – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Extra Chips – MWK 5,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Extra Rice – MWK 5,000</div><a class="order" href="#">Order</a></div>
-</div>
+  <div class="item">
+    <div class="item-header">
+      <span>Local Chicken</span>
+      <span class="price">MWK 13,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Local%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
 
-<!-- SOUPS -->
-<div class="section">
-  <h2>🍲 Soups & Specials</h2>
+  <div class="item">
+    <div class="item-header">
+      <span>Bombe</span>
+      <span class="price">MWK 18,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Bombe%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
 
-  <div class="item"><div class="price">Goat Soup – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Shin Soup – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Mang’ina Soup – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Skop – MWK 10,000</div><a class="order" href="#">Order</a></div>
-  <div class="item"><div class="price">Beef + Goat Kebab – MWK 5,500</div><a class="order" href="#">Order</a></div>
+  <div class="item">
+    <div class="item-header">
+      <span>Offals</span>
+      <span class="price">MWK 13,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Offals%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
 
+  <div class="item">
+    <div class="item-header">
+      <span>Mang’ina</span>
+      <span class="price">MWK 13,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Chambo</span>
+      <span class="price">MWK 30,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Chambo%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Zinziri</span>
+      <span class="price">MWK 15,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zinziri%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Zipiyo</span>
+      <span class="price">MWK 13,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zipiyo%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Goat Meat</span>
+      <span class="price">MWK 13,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Meat%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
 </div>
 
 </body>
 </html>
+<!-- SNACKS & SIDES -->
+<div class="section">
+  <h2>🍟 Snacks & Sides</h2>
+
+  <p class="serve">
+    Served with Rice, Chips, Nsima or Mashed Potatoes.
+  </p>
+
+  <div class="item">
+    <div class="item-header">
+      <span>4x Chicken Strips</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Chicken%20Strips%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>5x Samosa</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%205x%20Samosa%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Boiled/Fried Egg</span>
+      <span class="price">MWK 1,500</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Egg%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>4x Meatball</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Meatball%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Extra Chips</span>
+      <span class="price">MWK 5,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Chips%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Extra Rice</span>
+      <span class="price">MWK 5,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Rice%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+</div>
+
+<!-- SOUPS & SPECIALS -->
+<div class="section">
+  <h2>🍲 Soups & Specials</h2>
+
+  <p class="serve">
+    Served with Rice, Chips, Nsima or Mashed Potatoes.
+  </p>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Goat Soup</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Shin Soup</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Shin%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Mang’ina Soup</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Skop</span>
+      <span class="price">MWK 10,000</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Skop%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+
+  <div class="item">
+    <div class="item-header">
+      <span>Beef + Goat Kebab</span>
+      <span class="price">MWK 5,500</span>
+    </div>
+    <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20%2B%20Goat%20Kebab%0AQty:%0ALocation:%0ADelivery:">Order</a>
+  </div>
+</div>
