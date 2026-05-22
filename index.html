@@ -14,7 +14,6 @@
 
     h1 {
       color: #2e7d32;
-      text-align: left;
     }
 
     .notice {
@@ -23,47 +22,74 @@
       border-radius: 8px;
       font-weight: bold;
       margin-bottom: 20px;
-      text-align: left;
     }
 
     h2 {
       border-left: 5px solid #2e7d32;
       padding-left: 10px;
       margin-top: 25px;
-      text-align: left;
     }
 
     .item {
-  background: white;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      background: white;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
 
-.name {
-  font-weight: bold;
-  min-width: 180px;
-}
+    .name {
+      font-weight: bold;
+      flex: 1;
+    }
 
-.price {
-  color: #2e7d32;
-  font-weight: bold;
-}
+    .price {
+      color: #2e7d32;
+      font-weight: bold;
+      margin-right: 10px;
+      white-space: nowrap;
+    }
 
-.btn {
-  background: #2e7d32;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
+    .btn {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .cart {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 12px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    }
+
+    .cart button {
+      width: 100%;
+      padding: 16px;
+      background: #1b5e20;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .cart button:hover {
+      background: #166417;
+    }
   </style>
 </head>
 
@@ -78,50 +104,50 @@
 <!-- GRILL -->
 <h2>🍗 Grill Menu</h2>
 
-<div class="item"><div class="row"><span>4x Drumsticks</span><div><span class="price">MWK 25,000</span><button class="btn" onclick="add('4x Drumsticks')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>4x Wings</span><div><span class="price">MWK 20,000</span><button class="btn" onclick="add('4x Wings')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Quarter Chicken</span><div><span class="price">MWK 15,000</span><button class="btn" onclick="add('Quarter Chicken')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Half Chicken</span><div><span class="price">MWK 29,000</span><button class="btn" onclick="add('Half Chicken')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Full Chicken</span><div><span class="price">MWK 58,000</span><button class="btn" onclick="add('Full Chicken')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>T-Bone</span><div><span class="price">MWK 18,000</span><button class="btn" onclick="add('T-Bone')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Beef Rib</span><div><span class="price">MWK 18,000</span><button class="btn" onclick="add('Beef Rib')">Add</button></div></div></div>
+<div class="item"><span class="name">4x Drumsticks</span><span class="price">MWK 25,000</span><button class="btn" onclick="add('4x Drumsticks')">Add</button></div>
+<div class="item"><span class="name">4x Wings</span><span class="price">MWK 20,000</span><button class="btn" onclick="add('4x Wings')">Add</button></div>
+<div class="item"><span class="name">Quarter Chicken</span><span class="price">MWK 15,000</span><button class="btn" onclick="add('Quarter Chicken')">Add</button></div>
+<div class="item"><span class="name">Half Chicken</span><span class="price">MWK 29,000</span><button class="btn" onclick="add('Half Chicken')">Add</button></div>
+<div class="item"><span class="name">Full Chicken</span><span class="price">MWK 58,000</span><button class="btn" onclick="add('Full Chicken')">Add</button></div>
+<div class="item"><span class="name">T-Bone</span><span class="price">MWK 18,000</span><button class="btn" onclick="add('T-Bone')">Add</button></div>
+<div class="item"><span class="name">Beef Rib</span><span class="price">MWK 18,000</span><button class="btn" onclick="add('Beef Rib')">Add</button></div>
 
 <!-- LOCAL -->
 <h2>🍲 Local Dishes</h2>
 
-<div class="item"><div class="row"><span>Usipa</span><div><span class="price">MWK 20,000</span><button class="btn" onclick="add('Usipa')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Local Chicken</span><div><span class="price">MWK 13,000</span><button class="btn" onclick="add('Local Chicken')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Bombe</span><div><span class="price">MWK 18,000</span><button class="btn" onclick="add('Bombe')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Offals</span><div><span class="price">MWK 13,000</span><button class="btn" onclick="add('Offals')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Mang’ina</span><div><span class="price">MWK 13,000</span><button class="btn" onclick="add('Mangina')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Chambo</span><div><span class="price">MWK 30,000</span><button class="btn" onclick="add('Chambo')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Zinziri</span><div><span class="price">MWK 15,000</span><button class="btn" onclick="add('Zinziri')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Zipiyo</span><div><span class="price">MWK 13,000</span><button class="btn" onclick="add('Zipiyo')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Goat Meat</span><div><span class="price">MWK 13,000</span><button class="btn" onclick="add('Goat Meat')">Add</button></div></div></div>
+<div class="item"><span class="name">Usipa</span><span class="price">MWK 20,000</span><button class="btn" onclick="add('Usipa')">Add</button></div>
+<div class="item"><span class="name">Local Chicken</span><span class="price">MWK 13,000</span><button class="btn" onclick="add('Local Chicken')">Add</button></div>
+<div class="item"><span class="name">Bombe</span><span class="price">MWK 18,000</span><button class="btn" onclick="add('Bombe')">Add</button></div>
+<div class="item"><span class="name">Offals</span><span class="price">MWK 13,000</span><button class="btn" onclick="add('Offals')">Add</button></div>
+<div class="item"><span class="name">Mang’ina</span><span class="price">MWK 13,000</span><button class="btn" onclick="add('Mangina')">Add</button></div>
+<div class="item"><span class="name">Chambo</span><span class="price">MWK 30,000</span><button class="btn" onclick="add('Chambo')">Add</button></div>
+<div class="item"><span class="name">Zinziri</span><span class="price">MWK 15,000</span><button class="btn" onclick="add('Zinziri')">Add</button></div>
+<div class="item"><span class="name">Zipiyo</span><span class="price">MWK 13,000</span><button class="btn" onclick="add('Zipiyo')">Add</button></div>
+<div class="item"><span class="name">Goat Meat</span><span class="price">MWK 13,000</span><button class="btn" onclick="add('Goat Meat')">Add</button></div>
 
 <!-- SNACKS -->
 <h2>🍟 Snacks</h2>
 
-<div class="item"><div class="row"><span>Chicken Strips</span><div><span class="price">MWK 10,000</span><button class="btn" onclick="add('Chicken Strips')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Samosa</span><div><span class="price">MWK 1,500</span><button class="btn" onclick="add('Samosa')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Egg</span><div><span class="price">MWK 1,500</span><button class="btn" onclick="add('Egg')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Meatball</span><div><span class="price">MWK 10,000</span><button class="btn" onclick="add('Meatball')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Beef + Goat Kebab</span><div><span class="price">MWK 5,500</span><button class="btn" onclick="add('Beef + Goat Kebab')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Extra Chips</span><div><span class="price">MWK 5,000</span><button class="btn" onclick="add('Extra Chips')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Extra Rice</span><div><span class="price">MWK 5,000</span><button class="btn" onclick="add('Extra Rice')">Add</button></div></div></div>
+<div class="item"><span class="name">Chicken Strips</span><span class="price">MWK 10,000</span><button class="btn" onclick="add('Chicken Strips')">Add</button></div>
+<div class="item"><span class="name">Samosa</span><span class="price">MWK 1,500</span><button class="btn" onclick="add('Samosa')">Add</button></div>
+<div class="item"><span class="name">Egg</span><span class="price">MWK 1,500</span><button class="btn" onclick="add('Egg')">Add</button></div>
+<div class="item"><span class="name">Meatball</span><span class="price">MWK 10,000</span><button class="btn" onclick="add('Meatball')">Add</button></div>
+<div class="item"><span class="name">Beef + Goat Kebab</span><span class="price">MWK 5,500</span><button class="btn" onclick="add('Beef + Goat Kebab')">Add</button></div>
+<div class="item"><span class="name">Extra Chips</span><span class="price">MWK 5,000</span><button class="btn" onclick="add('Extra Chips')">Add</button></div>
+<div class="item"><span class="name">Extra Rice</span><span class="price">MWK 5,000</span><button class="btn" onclick="add('Extra Rice')">Add</button></div>
 
 <!-- SOUPS -->
 <h2>🍲 Soups</h2>
 
-<div class="item"><div class="row"><span>Goat Soup</span><div><span class="price">MWK 10,000</span><button class="btn" onclick="add('Goat Soup')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Shin Soup</span><div><span class="price">MWK 10,000</span><button class="btn" onclick="add('Shin Soup')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Mang’ina Soup</span><div><span class="price">MWK 10,000</span><button class="btn" onclick="add('Mangina Soup')">Add</button></div></div></div>
-<div class="item"><div class="row"><span>Skop</span><div><span class="price">MWK 10,000</span><button class="btn" onclick="add('Skop')">Add</button></div></div></div>
+<div class="item"><span class="name">Goat Soup</span><span class="price">MWK 10,000</span><button class="btn" onclick="add('Goat Soup')">Add</button></div>
+<div class="item"><span class="name">Shin Soup</span><span class="price">MWK 10,000</span><button class="btn" onclick="add('Shin Soup')">Add</button></div>
+<div class="item"><span class="name">Mang’ina Soup</span><span class="price">MWK 10,000</span><button class="btn" onclick="add('Mangina Soup')">Add</button></div>
+<div class="item"><span class="name">Skop</span><span class="price">MWK 10,000</span><button class="btn" onclick="add('Skop')">Add</button></div>
 
 <!-- CART -->
 <div class="cart">
   <div id="cartItems">Cart: empty</div>
-  <button onclick="sendOrder()">Send Order</button>
+  <button onclick="sendOrder()">SEND ORDER ON WHATSAPP</button>
 </div>
 
 <script>
