@@ -13,7 +13,6 @@
 
     h1 {
       color: #2e7d32;
-      margin-bottom: 10px;
     }
 
     .notice {
@@ -21,66 +20,53 @@
       padding: 12px;
       border-radius: 8px;
       font-weight: bold;
-      margin-bottom: 25px;
-      text-align: left;
-    }
-
-    .section {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
 
     h2 {
-      color: #333;
       border-left: 5px solid #2e7d32;
       padding-left: 10px;
-      margin-bottom: 10px;
-    }
-
-    .serve {
-      color: #666;
-      margin-bottom: 15px;
-      font-size: 14px;
+      margin-top: 30px;
     }
 
     .item {
       background: white;
-      border-radius: 12px;
-      padding: 15px;
-      margin-bottom: 12px;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
-    .item-name {
-      font-size: 17px;
-      font-weight: bold;
-      color: #222;
-      margin-bottom: 12px;
-    }
-
-    .item-bottom {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .price {
-      color: #2e7d32;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    .order {
+    .btn {
       background: #2e7d32;
       color: white;
-      text-decoration: none;
-      padding: 8px 16px;
+      border: none;
+      padding: 8px 12px;
       border-radius: 6px;
-      font-size: 14px;
-      font-weight: bold;
+      cursor: pointer;
     }
 
-    .order:hover {
-      background: #256628;
+    .cart {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 15px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+    }
+
+    .cart button {
+      width: 100%;
+      padding: 12px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
     }
   </style>
 </head>
@@ -93,257 +79,77 @@
 ⏱️ Average preparation time: 20 minutes
 </div>
 
-<!-- GRILL MENU -->
-<div class="section">
+<!-- GRILL -->
+<h2>🍗 Grill Menu</h2>
 
-  <h2>🍗 Grill Menu</h2>
+<div class="item"><span>4x Drumsticks - MWK 25,000</span><button class="btn" onclick="add('4x Drumsticks')">Add</button></div>
+<div class="item"><span>4x Wings - MWK 20,000</span><button class="btn" onclick="add('4x Wings')">Add</button></div>
+<div class="item"><span>Quarter Chicken - MWK 15,000</span><button class="btn" onclick="add('Quarter Chicken')">Add</button></div>
+<div class="item"><span>Half Chicken - MWK 29,000</span><button class="btn" onclick="add('Half Chicken')">Add</button></div>
+<div class="item"><span>Full Chicken - MWK 58,000</span><button class="btn" onclick="add('Full Chicken')">Add</button></div>
+<div class="item"><span>T-Bone - MWK 18,000</span><button class="btn" onclick="add('T-Bone')">Add</button></div>
+<div class="item"><span>Beef Rib - MWK 18,000</span><button class="btn" onclick="add('Beef Rib')">Add</button></div>
 
-  <div class="serve">
-    Served with Rice, Chips, Nsima or Mashed Potatoes.
-  </div>
+<!-- LOCAL -->
+<h2>🍲 Local Dishes</h2>
 
-  <div class="item">
-    <div class="item-name">4x Drumsticks</div>
-    <div class="item-bottom">
-      <span class="price">MWK 25,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Drumsticks%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">4x Wings</div>
-    <div class="item-bottom">
-      <span class="price">MWK 20,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Wings%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Quarter Chicken</div>
-    <div class="item-bottom">
-      <span class="price">MWK 15,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Quarter%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Half Chicken</div>
-    <div class="item-bottom">
-      <span class="price">MWK 29,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Half%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Full Chicken</div>
-    <div class="item-bottom">
-      <span class="price">MWK 58,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Full%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">T-Bone</div>
-    <div class="item-bottom">
-      <span class="price">MWK 18,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20T-Bone%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Beef Rib</div>
-    <div class="item-bottom">
-      <span class="price">MWK 18,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20Rib%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-</div>
-
-<!-- LOCAL DISHES -->
-<div class="section">
-
-  <h2>🍲 Local Dishes</h2>
-
-  <div class="serve">
-    Served with Rice, Chips, Nsima or Mashed Potatoes.
-  </div>
-
-  <div class="item">
-    <div class="item-name">Usipa</div>
-    <div class="item-bottom">
-      <span class="price">MWK 20,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Usipa%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Local Chicken</div>
-    <div class="item-bottom">
-      <span class="price">MWK 13,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Local%20Chicken%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Bombe</div>
-    <div class="item-bottom">
-      <span class="price">MWK 18,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Bombe%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Offals</div>
-    <div class="item-bottom">
-      <span class="price">MWK 13,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Offals%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Mang’ina</div>
-    <div class="item-bottom">
-      <span class="price">MWK 13,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Chambo</div>
-    <div class="item-bottom">
-      <span class="price">MWK 30,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Chambo%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Zinziri</div>
-    <div class="item-bottom">
-      <span class="price">MWK 15,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zinziri%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Zipiyo</div>
-    <div class="item-bottom">
-      <span class="price">MWK 13,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Zipiyo%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Goat Meat</div>
-    <div class="item-bottom">
-      <span class="price">MWK 13,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Meat%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-</div>
+<div class="item"><span>Usipa - MWK 20,000</span><button class="btn" onclick="add('Usipa')">Add</button></div>
+<div class="item"><span>Local Chicken - MWK 13,000</span><button class="btn" onclick="add('Local Chicken')">Add</button></div>
+<div class="item"><span>Bombe - MWK 18,000</span><button class="btn" onclick="add('Bombe')">Add</button></div>
+<div class="item"><span>Offals - MWK 13,000</span><button class="btn" onclick="add('Offals')">Add</button></div>
+<div class="item"><span>Mang’ina - MWK 13,000</span><button class="btn" onclick="add('Mangina')">Add</button></div>
+<div class="item"><span>Chambo - MWK 30,000</span><button class="btn" onclick="add('Chambo')">Add</button></div>
+<div class="item"><span>Zinziri - MWK 15,000</span><button class="btn" onclick="add('Zinziri')">Add</button></div>
+<div class="item"><span>Zipiyo - MWK 13,000</span><button class="btn" onclick="add('Zipiyo')">Add</button></div>
+<div class="item"><span>Goat Meat - MWK 13,000</span><button class="btn" onclick="add('Goat Meat')">Add</button></div>
 
 <!-- SNACKS -->
-<div class="section">
+<h2>🍟 Snacks</h2>
 
-  <h2>🍟 Snacks & Sides</h2>
-
-  <div class="item">
-    <div class="item-name">4x Chicken Strips</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Chicken%20Strips%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">5x Samosa</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%205x%20Samosa%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Boiled/Fried Egg</div>
-    <div class="item-bottom">
-      <span class="price">MWK 1,500</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Egg%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">4x Meatball</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%204x%20Meatball%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Beef + Goat Kebab</div>
-    <div class="item-bottom">
-      <span class="price">MWK 5,500</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Beef%20%2B%20Goat%20Kebab%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Extra Chips</div>
-    <div class="item-bottom">
-      <span class="price">MWK 5,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Chips%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Extra Rice</div>
-    <div class="item-bottom">
-      <span class="price">MWK 5,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Extra%20Rice%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-</div>
+<div class="item"><span>Chicken Strips - MWK 10,000</span><button class="btn" onclick="add('Chicken Strips')">Add</button></div>
+<div class="item"><span>Samosa - MWK 1,500</span><button class="btn" onclick="add('Samosa')">Add</button></div>
+<div class="item"><span>Egg - MWK 1,500</span><button class="btn" onclick="add('Egg')">Add</button></div>
+<div class="item"><span>Meatball - MWK 10,000</span><button class="btn" onclick="add('Meatball')">Add</button></div>
+<div class="item"><span>Beef + Goat Kebab - MWK 5,500</span><button class="btn" onclick="add('Beef + Goat Kebab')">Add</button></div>
+<div class="item"><span>Extra Chips - MWK 5,000</span><button class="btn" onclick="add('Extra Chips')">Add</button></div>
+<div class="item"><span>Extra Rice - MWK 5,000</span><button class="btn" onclick="add('Extra Rice')">Add</button></div>
 
 <!-- SOUPS -->
-<div class="section">
+<h2>🍲 Soups</h2>
 
-  <h2>🍲 Soups & Specials</h2>
+<div class="item"><span>Goat Soup - MWK 10,000</span><button class="btn" onclick="add('Goat Soup')">Add</button></div>
+<div class="item"><span>Shin Soup - MWK 10,000</span><button class="btn" onclick="add('Shin Soup')">Add</button></div>
+<div class="item"><span>Mang’ina Soup - MWK 10,000</span><button class="btn" onclick="add('Mangina Soup')">Add</button></div>
+<div class="item"><span>Skop - MWK 10,000</span><button class="btn" onclick="add('Skop')">Add</button></div>
 
-  <div class="item">
-    <div class="item-name">Goat Soup</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Goat%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Shin Soup</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Shin%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Mang’ina Soup</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Mangina%20Soup%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
-  <div class="item">
-    <div class="item-name">Skop</div>
-    <div class="item-bottom">
-      <span class="price">MWK 10,000</span>
-      <a class="order" href="https://wa.me/265999579445?text=ORDER%0AName:%0AItem:%20Skop%0AQty:%0ALocation:%0ADelivery:">Order</a>
-    </div>
-  </div>
-
+<!-- CART -->
+<div class="cart">
+  <div id="cartItems">Cart: empty</div>
+  <button onclick="sendOrder()">SEND ORDER ON WHATSAPP</button>
 </div>
+
+<script>
+let cart = [];
+
+function add(item){
+  cart.push(item);
+  document.getElementById("cartItems").innerText = "Cart: " + cart.join(", ");
+}
+
+function sendOrder(){
+  if(cart.length === 0){
+    alert("Cart is empty");
+    return;
+  }
+
+  let msg =
+    "ORDER SUMMARY%0A%0AItems:%0A- " +
+    cart.join("%0A- ") +
+    "%0A%0AName:%0ALocation:%0ADelivery:";
+
+  window.open("https://wa.me/265999579445?text=" + msg, "_blank");
+}
+</script>
 
 </body>
 </html>
