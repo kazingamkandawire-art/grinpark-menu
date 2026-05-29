@@ -39,7 +39,6 @@
       margin: 5px 0 10px 0;
     }
 
-    /* ITEM STYLE */
     .item {
       background: white;
       padding: 12px;
@@ -71,7 +70,6 @@
       cursor: pointer;
     }
 
-    /* CART */
     .cart {
       position: fixed;
       bottom: 0;
@@ -83,7 +81,6 @@
       text-align: left;
     }
 
-    /* SMALL LEFT BUTTON */
     .cart button {
       margin-top: 8px;
       padding: 8px 12px;
@@ -149,6 +146,14 @@
 <div class="item"><span class="name">Extra Chips</span><span class="price">MWK 5,000</span><button class="btn" onclick="add('Extra Chips')">Add</button></div>
 <div class="item"><span class="name">Extra Rice</span><span class="price">MWK 5,000</span><button class="btn" onclick="add('Extra Rice')">Add</button></div>
 
+<!-- PIZZA -->
+<h2>🍕 Pizza</h2>
+<div class="serve">Freshly prepared hot pizza.</div>
+
+<div class="item"><span class="name">Pizza Small</span><span class="price">MWK 26,000</span><button class="btn" onclick="add('Pizza Small')">Add</button></div>
+<div class="item"><span class="name">Pizza Medium</span><span class="price">MWK 34,500</span><button class="btn" onclick="add('Pizza Medium')">Add</button></div>
+<div class="item"><span class="name">Pizza Large</span><span class="price">MWK 38,500</span><button class="btn" onclick="add('Pizza Large')">Add</button></div>
+
 <!-- SOUPS -->
 <h2>🍲 Soups</h2>
 <div class="serve">Served with Rice, Nsima, Chips or Mashed Potatoes.</div>
@@ -169,11 +174,13 @@ let cart = [];
 
 function add(item){
   cart.push(item);
+
   document.getElementById("cartItems").innerText =
     "Cart: " + cart.join(", ");
 }
 
 function sendOrder(){
+
   if(cart.length === 0){
     alert("Cart is empty");
     return;
@@ -184,7 +191,10 @@ function sendOrder(){
     cart.join("%0A- ") +
     "%0A%0AName:%0ALocation:%0ADelivery:";
 
-  window.open("https://wa.me/265999579445?text=" + msg, "_blank");
+  window.open(
+    "https://wa.me/265999579445?text=" + msg,
+    "_blank"
+  );
 }
 </script>
 
