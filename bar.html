@@ -1,1 +1,89 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bar</title><style>body{font-family:Arial}header{background:#1b5e20;color:#fff;padding:15px;text-align:center}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;padding:10px}.card{border:1px solid #ccc;padding:10px}.price{color:red;font-weight:bold}button{background:#2e7d32;color:#fff}</style></head><body><header><h1>Grin Park Bar Menu</h1></header><script>let c=[];function a(n,p){c.push([n,p]);let t=0,m="Hello Grin Park,%0A";let h="";c.forEach(x=>{t+=x[1];h+=x[0]+" MWK "+x[1]+"<br>";m+="- "+x[0]+" MWK "+x[1]+"%0A"});document.getElementById("i").innerHTML=h;document.getElementById("t").innerHTML=t;document.getElementById("w").href="https://wa.me/?text="+m+"Total MWK "+t;}</script><h2>Local Beers</h2><div class='grid'><div class='card'><b>Special</b><div class='price'>MWK 5000</div><button onclick="a('Special',5000)">Add</button></div><div class='card'><b>Pomme</b><div class='price'>MWK 5000</div><button onclick="a('Pomme',5000)">Add</button></div><div class='card'><b>Carlsberg Green</b><div class='price'>MWK 5000</div><button onclick="a('Carlsberg Green',5000)">Add</button></div><div class='card'><b>Kuche Kuche</b><div class='price'>MWK 4000</div><button onclick="a('Kuche Kuche',4000)">Add</button></div></div><h2>Premium</h2><div class='grid'><div class='card'><b>Corona</b><div class='price'>MWK 9000</div><button onclick="a('Corona',9000)">Add</button></div><div class='card'><b>Heineken</b><div class='price'>MWK 9000</div><button onclick="a('Heineken',9000)">Add</button></div></div><h2>Soft</h2><div class='grid'><div class='card'><b>Water</b><div class='price'>MWK 1000</div><button onclick="a('Water',1000)">Add</button></div><div class='card'><b>Soft Drinks</b><div class='price'>MWK 2000</div><button onclick="a('Soft Drinks',2000)">Add</button></div><div class='card'><b>Red Bull</b><div class='price'>MWK 7500</div><button onclick="a('Red Bull',7500)">Add</button></div></div><div style="position:fixed;right:10px;bottom:10px;background:#fff;border:1px solid #2e7d32;padding:10px"><h3>Order</h3><div id="i"></div>Total: <span id="t">0</span><br><a id="w" href="https://wa.me/" target="_blank">WhatsApp Order</a></div></body></html>
+<h2>🍺 Local Beers</h2>
+<div class="grid">
+
+<div class="card">
+<b>Special</b>
+<div class="price">MWK 5,000</div>
+<button onclick="a('Special',5000)">Add</button>
+</div>
+
+<div class="card">
+<b>Carlsberg Green</b>
+<div class="price">MWK 5,000</div>
+<button onclick="a('Carlsberg Green',5000)">Add</button>
+</div>
+
+<div class="card">
+<b>Chill</b>
+<div class="price">MWK 5,000</div>
+<button onclick="a('Chill',5000)">Add</button>
+</div>
+
+<div class="card">
+<b>Kuche Kuche</b>
+<div class="price">MWK 4,000</div>
+<button onclick="a('Kuche Kuche',4000)">Add</button>
+</div>
+
+<div class="card">
+<b>Sapitwa</b>
+<div class="price">MWK 4,000</div>
+<button onclick="a('Sapitwa',4000)">Add</button>
+</div>
+
+<div class="card">
+<b>Doppel</b>
+<div class="price">MWK 4,000</div>
+<button onclick="a('Doppel',4000)">Add</button>
+</div>
+
+<div class="card">
+<b>Castel</b>
+<div class="price">MWK 4,000</div>
+<button onclick="a('Castel',4000)">Add</button>
+</div>
+<h2>🍎 Local Cider</h2>
+<div class="grid">
+
+<div class="card">
+<b>Pomme</b>
+<div class="price">MWK 5,000</div>
+<button onclick="a('Pomme',5000)">Add</button>
+</div>
+
+</div>
+  <h2>🌍 Imported Beers</h2>
+<div class="grid">
+
+<div class="card">
+<b>Corona</b>
+<div class="price">MWK 9,000</div>
+<button onclick="a('Corona',9000)">Add</button>
+</div>
+
+<div class="card">
+<b>Heineken</b>
+<div class="price">MWK 9,000</div>
+<button onclick="a('Heineken',9000)">Add</button>
+</div>
+
+<div class="card">
+<b>Castle Lite</b>
+<div class="price">MWK 9,000</div>
+<button onclick="a('Castle Lite',9000)">Add</button>
+</div>
+
+<div class="card">
+<b>Windhoek Lager</b>
+<div class="price">MWK 9,000</div>
+<button onclick="a('Windhoek Lager',9000)">Add</button>
+</div>
+
+<div class="card">
+<b>Windhoek Draught</b>
+<div class="price">MWK 9,000</div>
+<button onclick="a('Windhoek Draught',9000)">Add</button>
+</div>
+
+</div>
+</div>
